@@ -6,6 +6,7 @@ module com.example.lesalonproject {
     requires com.dlsc.formsfx;
     requires org.kordamp.bootstrapfx.core;
     requires java.sql;
+    requires java.desktop;
 
 //    requires org.xerial.sqlitejdbc;
 //    requires org.slf4j;
