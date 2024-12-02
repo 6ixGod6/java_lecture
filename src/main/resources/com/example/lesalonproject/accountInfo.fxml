@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:controller="com.example.lesalonproject.AccountInfoController" spacing="10" alignment="CENTER" xmlns:fx="http://javafx.com/fxml">
+    <ProgressIndicator fx:id="progressIndicator" visible="false"/>
+
+    <GridPane alignment="CENTER" hgap="10" vgap="10">
+        <Label text="Account ID:"/>
+        <Label fx:id="accountIdLabel"/>
+
+        <Label text="Alias:"/>
+        <Label fx:id="aliasLabel"/>
+
+        <Label text="Currency:"/>
+        <Label fx:id="currencyLabel"/>
+
+        <Label text="Balance:"/>
+        <Label fx:id="balanceLabel"/>
+
+        <Label text="NAV:"/>
+        <Label fx:id="navLabel"/>
+
+        <Label text="Unrealized P/L:"/>
+        <Label fx:id="unrealizedPLLabel"/>
+
+        <Label text="Margin Rate:"/>
+        <Label fx:id="marginRateLabel"/>
+
+        <Label text="Open Trades:"/>
+        <Label fx:id="openTradesLabel"/>
+    </GridPane>
+</VBox>
