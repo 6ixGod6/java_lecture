@@ -38,6 +38,11 @@
             <MenuItem text="Click to see example" onAction="#handleParallels" />
             
         </Menu>
+        <Menu text="SoapClient">
+            <MenuItem text="Download" onAction="#openDownloadForm"/>
+            <MenuItem text="Download2" onAction="#downloadFilteredSoapData"/>
+            <MenuItem text="Graph" onAction="#graphSoapData"/>
+        </Menu>
 
         
     </MenuBar>

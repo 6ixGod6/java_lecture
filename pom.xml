@@ -14,12 +14,48 @@
     </properties>
 
     <dependencies>
+    
+    <dependency>
+            <groupId>jakarta.xml.bind</groupId>
+            <artifactId>jakarta.xml.bind-api</artifactId>
+            <version>3.0.0</version>
+
+        </dependency>
+    <dependency>
+            <groupId>jakarta.xml.ws</groupId>
+            <artifactId>jakarta.xml.ws-api</artifactId>
+            <version>3.0.0</version>
+        </dependency>
+    <dependency>
+            <groupId>jakarta.persistence</groupId>
+            <artifactId>jakarta.persistence-api</artifactId>
+            <version>3.1.0</version>
+    </dependency>
+    <dependency>
+            <groupId>jakarta.xml.ws</groupId>
+            <artifactId>jakarta.xml.ws-api</artifactId>
+            <version>3.0.0</version>
+        </dependency>
+
+    
+
+    <!-- JAXB Runtime -->
+    <dependency>
+        <groupId>org.glassfish.jaxb</groupId>
+        <artifactId>jaxb-runtime</artifactId>
+        <version>3.0.2</version>  <!-- Use the latest stable version -->
+    </dependency>
         <!-- JavaFX Dependencies -->
         <dependency>
         <groupId>org.controlsfx</groupId>
         <artifactId>controlsfx</artifactId>
         <version>11.2.1</version>
     </dependency>
+    <dependency>
+            <groupId>org.controlsfx</groupId>
+            <artifactId>controlsfx</artifactId>
+            <version>11.2.1</version>
+        </dependency>
     <dependency>
         <groupId>com.dlsc.formsfx</groupId>
         <artifactId>formsfx-core</artifactId>
@@ -124,6 +160,29 @@
                     </execution>
                 </executions>
             </plugin>
+
+             <plugin>
+    <groupId>com.sun.xml.ws</groupId>
+    <artifactId>jaxws-maven-plugin</artifactId>
+    <version>3.0.0</version>
+    <executions>
+        <execution>
+            <goals>
+                <goal>wsimport</goal>
+            </goals>
+        </execution>
+    </executions>
+    <configuration>
+        <wsdlUrls>
+            <wsdlUrl>http://www.mnb.hu/arfolyamok.asmx?wsdl</wsdlUrl>
+        </wsdlUrls>
+        <keep>true</keep>
+        <packageName>com.example.lesalonproject.service</packageName>
+        <sourceDestDir>${project.basedir}/src/main/java</sourceDestDir>
+    </configuration>
+</plugin>
+
+       
         </plugins>
     </build>
 </project>
