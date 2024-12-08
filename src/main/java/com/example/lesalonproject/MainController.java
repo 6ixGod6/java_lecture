@@ -10,9 +10,13 @@ import java.util.Objects;
 public class MainController {
     @FXML
     private StackPane contentPane;
+
     public void accountInformationAction(){
         loadView("accountInfo.fxml");
     }
+
+
+
     public void handleParallels(){
         loadView("parallelProgrammingView.fxml");
     }
