@@ -39,15 +39,7 @@
             
         </Menu>
 
-        <Menu text="Forex">
-          <items>
-            <MenuItem text="Account Information" onAction="#accountInformationAction"/>
-            <!-- <MenuItem text="Current Prices" onAction="#currentPricesAction"/>
-            <MenuItem text="Historical Prices" onAction="#historicalPricesAction"/>
-            <MenuItem text="Position Opening" onAction="#positionOpeningAction"/>
-            <MenuItem text="Position Closing" onAction="#positionClosingAction"/>
-            <MenuItem text="Opened Positions" onAction="#openedPositionsAction"/> -->
-          </items>
+        
     </MenuBar>
 </top>
     <center>
