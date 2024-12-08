@@ -11,6 +11,7 @@ module com.example.lesalonproject {
     requires jakarta.xml.ws;
     requires jakarta.xml.bind; 
     requires org.controlsfx.controls;
+    requires v20;
     
      // Jakarta JAXB API
     //requires com.sun.xml.bind; // JAXB Runtime

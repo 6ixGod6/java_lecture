@@ -44,6 +44,17 @@
             <MenuItem text="Graph" onAction="#graphSoapData"/>
         </Menu>
 
+                <Menu text="Forex last">
+            <items>
+                <MenuItem text="Account Information" onAction="#accountInformationAction"/>
+                <MenuItem text="Current Prices" onAction="#CurrentPriceDeci"/>
+                <MenuItem text="Historical Prices" onAction="#historicalPricesAction"/>
+                <MenuItem text="Position Opening" onAction="#positionOpeningAction"/>
+                <MenuItem text="Position Closing" onAction="#positionCloseAction"/>
+                <MenuItem text="Opened Positions" onAction="#openPositionsAction"/>
+            </items>
+        </Menu>
+
         
     </MenuBar>
 </top>
